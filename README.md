@@ -16,8 +16,8 @@
 
 ```powershell
 git lfs install
-git clone <本仓库地址>
-cd <仓库目录>
+git clone https://github.com/zixuanguo89/CampusTerminal.git
+cd CampusTerminal
 git lfs pull
 ```
 
@@ -28,7 +28,7 @@ GitHub 的普通源码 ZIP 下载可能只包含音频的 LFS 指针。请用上
 使用安路 TD 6.2.1 SP1 和 Python 3。在工程根目录运行：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .uild.ps1
+powershell -ExecutionPolicy Bypass -File ./build.ps1
 ```
 
 脚本先更新工程与资源路径，再编译。若 TD 或 Python 未在默认位置安装，请配置 PATH 或修改 build.ps1 中的软件位置。顶层为 top，器件为 EG4S20BG256。编译输出位于 build，BIT 文件用于 JTAG 下载；不写入 TF 卡。
